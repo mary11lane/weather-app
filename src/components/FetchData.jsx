@@ -14,6 +14,8 @@ const FetchData = ({
     setLocation(e.target.value);
   };
 
+  const apiKey = API_KEY;
+
   const fetchWeather = async () => {
     const { data } = await axios(
       `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`
