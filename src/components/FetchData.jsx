@@ -14,7 +14,7 @@ const FetchData = ({
     setLocation(e.target.value);
   };
 
-  const apiKey = '';
+  const apiKey = process.env.API_KEY;
 
   const fetchWeather = async () => {
     const { data } = await axios(
