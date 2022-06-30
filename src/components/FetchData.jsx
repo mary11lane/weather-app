@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import axios from 'axios';
+
 import fetchDataStyles from './FetchData.module.css';
 
 const FetchData = ({
@@ -14,7 +15,7 @@ const FetchData = ({
     setLocation(e.target.value);
   };
 
-  const apiKey = process.env.API_KEY;
+  // const apiKey = process.env.API_KEY;
 
   const fetchWeather = async () => {
     const { data } = await axios(
